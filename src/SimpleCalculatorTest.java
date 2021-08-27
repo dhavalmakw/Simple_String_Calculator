@@ -19,6 +19,10 @@ public class SimpleCalculatorTest extends TestCase
 	
 	public void testFortwotString()
 	{
-		assertTrue(simpleCalculator.add("2,3") == 5);
+		assertTrue(simpleCalculator.add("5,3") == 8);
+	}
+	public void testForMultipletString()
+	{
+		assertTrue(simpleCalculator.add("1,2,3,4") == 10);
 	}
 }
