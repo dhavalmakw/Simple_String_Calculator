@@ -7,7 +7,10 @@ public class SimpleCalculator {
 	
 	public int add(String str)
 	{
-		return 0;
+		if(str.isEmpty())
+			return 0;
+		int num = Integer.parseInt(str);
+		return num;
 	}
 	
 }

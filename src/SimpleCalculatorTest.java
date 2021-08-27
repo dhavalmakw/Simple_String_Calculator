@@ -11,4 +11,8 @@ public class SimpleCalculatorTest extends TestCase
 	{
 		assertTrue(simpleCalculator.add("") == 0);
 	}
+	public void testFirstString()
+	{
+		assertTrue(simpleCalculator.add("2") == 2);
+	}
 }
