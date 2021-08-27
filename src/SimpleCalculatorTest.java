@@ -33,4 +33,9 @@ public class SimpleCalculatorTest extends TestCase
 	{
 		assertTrue(simpleCalculator.add("1\n4,3") == 8);
 	}
+
+	public void testDiffDelimiterString()
+	{
+		assertTrue(simpleCalculator.add("//;\n1;2") == 3);
+	}
 }

@@ -1,14 +1,7 @@
 
 public class SimpleCalculator 
 {
-	
-	String getDelimeter(String s)
-	{
-		if(s.charAt(0) == '/' && s.charAt(1) == '/' )
-			return s.substring(2,3);
-		return ",";
-	}
-	
+
 	public int add(String str)
 	{
 		if(str.length()<2)
@@ -18,16 +11,21 @@ public class SimpleCalculator
 			else 
 			{
 				int num = Integer.parseInt(str);
-				System.out.print(num);
 				return num;
 			}
 		}
 		else
 		{
-			str = str.replaceAll("\n", ",");
-			String delimeter = getDelimeter(str);
-			// String str2 = new String(c); 
-			String[] arrOfStr = str.split(delimeter);
+	
+	        String delimiter = ",";
+	        if (str.matches("//(.*)\n(.*)")) 
+	        {
+	        	delimiter = Character.toString(str.charAt(2));
+	            str = str.substring(4);
+	        }
+			
+			String[] arrOfStr = str.split(delimiter +"|\n");
+			
 			
 			int sum = 0;
 			for(int i=0;i<arrOfStr.length;i++)
@@ -37,7 +35,6 @@ public class SimpleCalculator
 			}
 			return sum;
 		}
-		
 		
 		
 	}
