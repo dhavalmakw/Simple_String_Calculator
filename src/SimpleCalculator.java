@@ -2,15 +2,20 @@
 public class SimpleCalculator 
 {
 
-	public int add(String str)
-	{
+	public int add(String str) throws Exception
+	{ 
 		if(str.length()<2)
 		{
+			
 			if(str.isEmpty())
 				return 0;
+			int num = Integer.parseInt(str);
+			if(num<0)
+			{
+				throw new Exception("negatives not allowed");
+			}
 			else 
 			{
-				int num = Integer.parseInt(str);
 				return num;
 			}
 		}
@@ -31,6 +36,10 @@ public class SimpleCalculator
 			for(int i=0;i<arrOfStr.length;i++)
 			{
 				int num1 = Integer.parseInt(arrOfStr[i]);
+				if(num1<0)
+				{
+					throw new Exception("negatives not allowed");
+				}
 				sum += num1;
 			}
 			return sum;
