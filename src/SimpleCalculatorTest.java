@@ -64,4 +64,10 @@ public class SimpleCalculatorTest extends TestCase
 			}
 		}
 	}
+	
+	public void testBiggerThan() throws Exception
+	{
+		assertTrue(simpleCalculator.add("2,1000") == 2);
+	}
+	
 }

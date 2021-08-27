@@ -40,7 +40,8 @@ public class SimpleCalculator
 				{
 					throw new Exception("negatives not allowed");
 				}
-				sum += num1;
+				else if(num1 < 1000)
+					sum += num1;
 			}
 			return sum;
 		}
