@@ -7,6 +7,7 @@ public class SimpleCalculatorTest extends TestCase
 	{
 		simpleCalculator = new SimpleCalculator();
 	}
+	
 	public void testEmptyString()
 	{
 		assertTrue(simpleCalculator.add("") == 0);
@@ -21,8 +22,14 @@ public class SimpleCalculatorTest extends TestCase
 	{
 		assertTrue(simpleCalculator.add("5,3") == 8);
 	}
+	
 	public void testForMultipletString()
 	{
 		assertTrue(simpleCalculator.add("1,2,3,4") == 10);
+	}
+	
+	public void testForNewlinetString()
+	{
+		assertTrue(simpleCalculator.add("1\n4") == 5);
 	}
 }

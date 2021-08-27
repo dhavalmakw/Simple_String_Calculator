@@ -15,7 +15,9 @@ public class SimpleCalculator {
 			return num;
 		}
 		
-		String[] arrOfStr = str.split(","); 
+		str = str.replaceAll("\n", ","); 
+		String[] arrOfStr = str.split(",");
+		
 		int sum = 0;
 		for(int i=0;i<arrOfStr.length;i++)
 		{
@@ -23,7 +25,6 @@ public class SimpleCalculator {
 			sum += num1;
 		}
 		return sum;
-		
 		
 	}
 }
