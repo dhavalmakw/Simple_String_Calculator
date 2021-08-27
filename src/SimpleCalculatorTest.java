@@ -81,8 +81,4 @@ public class SimpleCalculatorTest extends TestCase
 		assertTrue(simpleCalculator.add("1\n2,3\n4") == 10);
 	}
 	
-	public void testHighLengthDelimiter() throws Exception
-	{
-		assertTrue(simpleCalculator.add("//[***]\n1***2***3") == 10);
-	}
 }
