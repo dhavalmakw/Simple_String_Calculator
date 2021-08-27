@@ -1,3 +1,4 @@
+
 import junit.framework.TestCase;
 
 public class SimpleCalculatorTest extends TestCase 
@@ -30,6 +31,6 @@ public class SimpleCalculatorTest extends TestCase
 	
 	public void testForNewlinetString()
 	{
-		assertTrue(simpleCalculator.add("1\n4") == 5);
+		assertTrue(simpleCalculator.add("1\n4,3") == 8);
 	}
 }
