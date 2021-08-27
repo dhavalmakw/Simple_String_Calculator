@@ -43,14 +43,24 @@ public class SimpleCalculatorTest extends TestCase
 	{
 		try 
 		{
-			simpleCalculator.add("-1,-2");
-		    fail("Missing exception");
+			simpleCalculator.add("-5,6");
 		} 
 		catch( Exception e ) 
 		{
 			if(!e.getMessage().contains("negatives not allowed"))
 			{
-				throw new Exception("Test case faild");
+				throw new Exception("Test case faild: -5");
+			}
+		}
+		try 
+		{
+			simpleCalculator.add("-2,1,0,-5,6");
+		} 
+		catch( Exception e ) 
+		{
+			if(!e.getMessage().contains("negatives not allowed"))
+			{
+				throw new Exception("Test case faild: -2,-5");
 			}
 		}
 	}
