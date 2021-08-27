@@ -75,4 +75,9 @@ public class SimpleCalculatorTest extends TestCase
 	{
 		assertTrue(simpleCalculator.add("12,150,15000,50000,1000") == 162);
 	}
+	
+	public void testOtherDelimiter() throws Exception
+	{
+		assertTrue(simpleCalculator.add("1\n2,3\n4") == 10);
+	}
 }
