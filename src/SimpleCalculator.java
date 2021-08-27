@@ -9,8 +9,21 @@ public class SimpleCalculator {
 	{
 		if(str.isEmpty())
 			return 0;
-		int num = Integer.parseInt(str);
-		return num;
+		if(str.length() == 1)
+		{
+			int num = Integer.parseInt(str);
+			return num;
+		}
+		
+		String[] arrOfStr = str.split(","); 
+		int sum = 0;
+		for(int i=0;i<2;i++)
+		{
+			int num1 = Integer.parseInt(arrOfStr[i]);
+			sum += num1;
+		}
+		return sum;
+		
+		
 	}
-	
 }
