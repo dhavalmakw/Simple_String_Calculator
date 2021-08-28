@@ -7,7 +7,7 @@
 TDD helps keep productivity high by narrowing focus of the developers.
 ### Language :- Java
 ### Tool :- Eclipse  
-### Dependencies :- jutil 3
+### Dependencies :- junit 3
 # Steps:
  1. Create **int Add(string numbers)**. This method is defined as a public and return addition of two number. 
  2. This method can take string as a perimeter.
