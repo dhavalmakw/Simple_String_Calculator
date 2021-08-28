@@ -1,4 +1,8 @@
 # Simple String Calculator using TDD
+# Before you start:
+- Try **not to read ahead**.
+- Do **one task at a time**. The trick is to learn to work incrementally.
+- Make sure you only test for correct inputs. There is no need to test for invalid inputs for this kata.
 ## Why is TDD important?
 TDD helps keep productivity high by narrowing focus of the developers.
 ### Language :- Java
