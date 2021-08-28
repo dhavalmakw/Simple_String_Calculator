@@ -9,7 +9,7 @@ TDD helps keep productivity high by narrowing focus of the developers.
 ### Tool :- Eclipse  
 ### Dependencies :- jutil 3
 # Steps:
- 1. Create add method. This method is defined as a public and return addition of two number. 
+ 1. Create **int Add(string numbers)**. This method is defined as a public and return addition of two number. 
  2. This method can take string as a perimeter.
  3. Check for empty string. Example : " " 
  4. Allow the Add method to handle an unknown amount of numbers like : "1", "1,2" 
