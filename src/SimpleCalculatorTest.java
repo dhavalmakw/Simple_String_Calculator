@@ -39,6 +39,12 @@ public class SimpleCalculatorTest extends TestCase
 		assertTrue(simpleCalculator.add("//;\n1;2") == 3);
 	}
 	
+	
+	public void testBiggerThan() throws Exception
+	{
+		assertTrue(simpleCalculator.add("2,1000") == 2);
+	}
+	
 	public void testForNegativeString() throws Exception
 	{
 		try 
@@ -65,12 +71,6 @@ public class SimpleCalculatorTest extends TestCase
 		}
 	}
 	
-	public void testBiggerThan() throws Exception
-	{
-		assertTrue(simpleCalculator.add("2,1000") == 2);
-	}
-	
-
 	public void testMultipleBiggerThan() throws Exception
 	{
 		assertTrue(simpleCalculator.add("12,150,15000,50000,1000") == 162);

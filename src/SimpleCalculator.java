@@ -1,7 +1,10 @@
 
 public class SimpleCalculator 
 {
-
+	private String[] splitNumbers(String str1, String str2) 
+	{
+		return str1.split(str2);
+	}
 	public int add(String str) throws Exception
 	{ 
 		if(str.length()<2)
@@ -29,8 +32,7 @@ public class SimpleCalculator
 	            str = str.substring(4);
 	        }
 			
-			String[] arrOfStr = str.split(delimiter +"|\n");
-			
+			String[] arrOfStr = splitNumbers(str,delimiter+"|\n");
 			
 			int sum = 0;
 			for(int i=0;i<arrOfStr.length;i++)
