@@ -22,6 +22,6 @@ TDD helps keep productivity high by narrowing focus of the developers.
         I) “//;\n1;2” should return 1+2 = 3 where the default delimiter is ‘;’ .
        II) The first line is optional. all existing scenarios should still be supported
  8. Method also works for negative number and it will throw an exception “negatives not allowed” - and the negative that was passed.
- 9. add method does not contain number which bigger than 1000 should be ignored, so adding 2 + 1001 = 2
+ 9. add method does not contain number which is bigger than 1000 should be ignored, so adding 2 + 1001 = 2
 # commit
 Here, every test has it's own commit which show that what kind of operation will be performed.
